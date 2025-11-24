@@ -1,0 +1,134 @@
+<div class="app-container">
+  <h1>My Todo App</h1>
+
+  <div class="input-section">
+    <input type="text" placeholder="Task Title" />
+    <textarea placeholder="Task Description" rows="2"></textarea>
+    <button>Add</button>
+  </div>
+
+  
+</div>
+
+<style>
+  body {
+    background: #121212;
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .app-container {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .input-section input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #2b2b2b;
+    color: white;
+  }
+
+  .input-section button {
+    padding: 12px;
+    background: #4f46e5;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .todo-item {
+    background: #232323;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: transform 0.2s, background 0.2s;
+  }
+
+  .delete-btn {
+    background: #e11d48;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+.input-section textarea {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #2b2b2b;
+    color: white;
+    resize: none;
+    margin-top: 10px;
+  }
+
+.todo-item:hover {
+    background: #2e2e2e;
+    transform: translateY(-3px);
+  }
+
+  .todo-title {
+    font-size: 1.1rem;
+    margin: 0 0 4px 0;
+    font-weight: 600;
+  }
+
+  .todo-desc {
+    margin: 0;
+    color: #cfcfcf;
+    font-size: 0.9rem;
+  }
+
+  .delete-btn {
+    background: #e11d48;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .delete-btn:hover {
+    background: #be123c;
+  }
+
+</style>
