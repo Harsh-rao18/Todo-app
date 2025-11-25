@@ -1,0 +1,32 @@
+/* Full page background */
+.app-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Center container */
+.app-container {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  padding: 30px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Page title */
+.app-title {
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
