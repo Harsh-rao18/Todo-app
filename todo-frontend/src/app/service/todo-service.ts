@@ -17,6 +17,11 @@ export class TodoService {
       map(response => response._embedded.todos)
     )
   }
+
+  getTodo(theTodoId:number): Observable<TodoModel>{
+    const todoUrl = `${this.baseUrl}/${theTodoId}`;
+    return this.httpClient.get<TodoModel>(todoUrl);
+  }
 }
 
 interface GetResponse{

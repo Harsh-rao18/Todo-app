@@ -1,0 +1,24 @@
+<div class="detail-container">
+  <div class="detail-card">
+
+    <div class="detail-header">
+      <a routerLink="/todos" class="back-btn">← Back</a>
+      <h2 class="detail-title">{{ todo.title }}</h2>
+    </div>
+
+    <p class="detail-description">
+      {{ todo.description }}
+    </p>
+
+    <div class="detail-dates">
+      <small>Created: {{ todo.createdAt }}</small>
+      <small>Updated: {{ todo.updatedAt }}</small>
+    </div>
+
+    <div class="detail-actions">
+      <button class="edit-btn">Edit</button>
+      <button class="delete-btn">Delete</button>
+    </div>
+
+  </div>
+</div>

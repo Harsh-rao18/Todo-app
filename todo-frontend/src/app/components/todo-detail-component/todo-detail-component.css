@@ -1,0 +1,112 @@
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 14px;
+  width: 100%;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.completed {
+  background: #22c55e;
+  color: black;
+}
+
+.pending {
+  background: #f59e0b;
+  color: black;
+}
+
+.detail-description {
+  font-size: 15px;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+.detail-dates {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.detail-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* Buttons */
+.edit-btn, .delete-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.edit-btn:hover {
+  opacity: 0.9;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  opacity: 0.9;
+}
+
+.back-btn {
+  background: #2a2a2a;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #3a3a3a;
+  width: fit-content;
+  transition: background 0.2s ease, transform 0.15s ease;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background: #3a3a3a;
+  transform: translateX(-3px);
+}
+

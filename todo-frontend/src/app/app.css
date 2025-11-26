@@ -1,4 +1,3 @@
-/* Full page background */
 .app-wrapper {
   min-height: 100vh;
   width: 100%;
@@ -10,23 +9,51 @@
   box-sizing: border-box;
 }
 
-/* Center container */
 .app-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;     /* Smaller Box */
   background: rgba(0, 0, 0, 0.35);
   border-radius: 16px;
-  padding: 30px;
-  backdrop-filter: blur(6px);
+  padding: 25px;
+  backdrop-filter: blur(8px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* Page title */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .app-title {
-  text-align: center;
-  font-size: 32px;
   color: #fff;
-  margin-bottom: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Add Todo Button */
+.add-btn {
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #22c55e;
+  color: #000;
+  transition: 0.2s ease;
+}
+
+.add-btn:hover {
+  opacity: 0.85;
+}
+
+/* Todo list box */
+.todo-box {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.3);
 }

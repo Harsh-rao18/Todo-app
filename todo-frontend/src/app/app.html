@@ -1,7 +1,19 @@
 <div class="app-wrapper">
   <div class="app-container">
-    <h1 class="app-title">My Todo List</h1>
 
-    <app-todo-list-component></app-todo-list-component>
+    <div class="header-row">
+      <h1 class="app-title">My Todo List</h1>
+
+      <!-- Add Todo Button -->
+      <button class="add-btn">
+        + Add Todo
+      </button>
+    </div>
+
+    <!-- Todo List Component in a small box -->
+    <div class="todo-box">
+      <router-outlet></router-outlet>
+    </div>
+
   </div>
 </div>

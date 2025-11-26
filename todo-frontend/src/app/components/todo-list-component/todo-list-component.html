@@ -1,26 +1,19 @@
 <div class="todo-container">
-  <div class="todo-card" *ngFor="let tempTodos of todos">
-
+  <div 
+    class="todo-card"
+    *ngFor="let tempTodos of todos"
+    [routerLink]="['/todos', tempTodos.id]"
+    style="cursor: pointer;"
+  >
     <div class="todo-header">
       <h2 class="todo-title">{{ tempTodos.title }}</h2>
 
-      <!-- Completed badge -->
       <span
         class="status-badge"
         [ngClass]="tempTodos.completed ? 'completed' : 'pending'"
       >
-        {{ tempTodos.completed ? 'Completed' : 'Pending' }}
+        {{ tempTodos.completed ? '✔ Done' : '⏳ Pending' }}
       </span>
     </div>
-
-    <p class="todo-description">
-      {{ tempTodos.description }}
-    </p>
-
-    <div class="todo-footer">
-      <small>Created: {{ tempTodos.createdAt | date:'medium' }}</small>
-      <small>Updated: {{ tempTodos.updatedAt | date:'medium' }}</small>
-    </div>
-
   </div>
 </div>
