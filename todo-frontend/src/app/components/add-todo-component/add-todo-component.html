@@ -1,0 +1,48 @@
+<div class="create-container">
+
+  <div class="create-card">
+
+    <h2 class="create-title">Create New Todo</h2>
+
+    <form >
+
+      <!-- Title -->
+      <div class="form-group">
+        <label>Title</label>
+        <input
+          type="text"
+          name="title"
+          class="form-control"
+          placeholder="Enter todo title"
+          required
+        />
+      </div>
+
+      <!-- Description -->
+      <div class="form-group">
+        <label>Description</label>
+        <textarea
+          name="description"
+          class="form-control textarea"
+          placeholder="Enter todo description"
+          rows="4"
+          required
+        ></textarea>
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-actions">
+        <button routerLink="/todos" type="button" class="cancel-btn">
+          Cancel
+        </button>
+
+        <button class="create-btn">
+          Create Todo
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
